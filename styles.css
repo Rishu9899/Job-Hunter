@@ -1,0 +1,405 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Navbar */
+nav {
+    background: #4CAF50;
+    color: #fff;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background: #45a049;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: black;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.hero .btn {
+    background: #ff5722;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+.hero .btn:hover {
+    background: #e64a19;
+}
+
+/* Features Section */
+#features {
+    padding: 60px 0;
+    background: #fff;
+}
+
+#features h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+.feature-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.feature-item {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.feature-item h3 {
+    margin-top: 0;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    margin: 0;
+}
+
+/* CTA Section */
+#cta {
+    background: #4CAF50;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#cta h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+#cta .btn {
+    background: #ff9800;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+#cta .btn:hover {
+    background: #fb8c00;
+}
+
+/* Testimonial Section */
+#testimonials {
+    padding: 60px 0;
+    background: #f4f4f4;
+}
+
+#testimonials h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+.testimonial {
+    background: #fff;
+    padding: 20px;
+    border-left: 5px solid #4CAF50;
+    margin: 20px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.testimonial .stars {
+    color: #FFD700;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.testimonial blockquote {
+    margin: 0;
+    font-style: italic;
+}
+
+.testimonial::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-left: 5px solid #4CAF50;
+    border-bottom: 5px solid #4CAF50;
+    position: absolute;
+    top: 10px;
+    right: -15px;
+    transform: rotate(45deg);
+}
+
+/* FAQ Section */
+#faq {
+    padding: 60px 0;
+    background: #fff;
+}
+
+#faq h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h3 {
+    margin: 0;
+    cursor: pointer;
+    transition: color 0.3s;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+
+.faq-item h3:hover {
+    color: #4CAF50;
+}
+
+.faq-item p {
+    margin: 10px 0;
+    display: none;
+    padding: 0 0 10px 0;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.faq-item.active p {
+    display: block;
+}
+
+.faq-item form {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.faq-item form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.faq-item form button {
+    background: #4CAF50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.faq-item form button:hover {
+    background: #45a049;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+}
+
+footer .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h2 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ddd;
+}
+
+footer p {
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        height: 50vh;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 400px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.social-login button {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.google {
+    background-color: #db4437;
+    color: white;
+}
+
+.facebook {
+    background-color: #4267B2;
+    color: white;
+}
+

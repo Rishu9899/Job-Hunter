@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Hunter</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <style>
+        /* Animation for Hero Section Text */
+        .hero h2 span {
+            display: inline-block;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.5s forwards;
+            animation-delay: calc(0.1s * var(--i));
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="container">
+            <h1>Job Hunter</h1>
+            <ul>
+                <li><a href="#">Job Section</a></li>
+                <li><a href="#">Roadmap Section</a></li>
+                <li><a href="#">Job Search Section</a></li>
+                <li><a href="#">More</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>
+                <span style="--i:1;">Find</span>
+                <span style="--i:2;">Your</span>
+                <span style="--i:3;">Dream</span>
+                <span style="--i:4;">Job</span>
+                <span style="--i:5;">with</span>
+                <span style="--i:6;">Job</span>
+                <span style="--i:7;">Hunter</span>
+            </h2>
+            <p>Your journey to a successful career starts here. Explore jobs, career paths, and the best courses to achieve your goals.</p>
+            <a href="#" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Features List Section -->
+    <section id="features">
+        <div class="container">
+            <h2>Core Features</h2>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <h3>Job Search Engine</h3>
+                    <p>Search for jobs based on keywords, location, and other filters.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Roadmaps</h3>
+                    <p>Detailed career paths for different jobs, showing the steps and skills needed.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Course Mapping</h3>
+                    <p>Curated list of courses that align with the job roles and roadmaps.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>User Profiles</h3>
+                    <p>Create profiles, track progress, and save jobs or courses.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Notification System</h3>
+                    <p>Get alerts for new job postings, roadmap updates, or course releases.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Community & Forums</h3>
+                    <p>Discuss job hunting, career advice, and share experiences with others.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta">
+        <div class="container">
+            <h2>Join Job Hunter Today!</h2>
+            <p>Sign up or learn more about how Job Hunter can assist in your job search and career development.</p>
+            <a href="#" class="btn">Sign Up Now</a>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section id="testimonials">
+        <div class="container">
+            <h2>What Our Users Say</h2>
+            <div class="testimonial">
+                <blockquote>
+                    "Job Hunter helped me land my dream job in just a few weeks! The roadmaps and course recommendations were spot on."
+                    <div class="stars">★★★★★</div>
+                    - Jane Doe
+                </blockquote>
+            </div>
+            <div class="testimonial">
+                <blockquote>
+                    "The community and forums on Job Hunter provided great advice and support during my job search."
+                    <div class="stars">★★★★☆</div>
+                    - John Smith
+                </blockquote>
+            </div>
+            <div class="testimonial">
+                <blockquote>
+                    "I love the notification system! I never miss out on new job postings or updates."
+                    <div class="stars">★★★★★</div>
+                    - Alex Johnson
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>How do I use Job Hunter?</h3>
+                <p>Simply sign up, create a profile, and start exploring job listings, roadmaps, and courses tailored to your career goals.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What subscription plans are available?</h3>
+                <p>We offer free and premium subscriptions. Premium users get access to exclusive content and personalized job alerts.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Have a question? Ask us!</h3>
+                <form action="#">
+                    <input type="text" placeholder="Type your question here..." required>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Modal -->
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeLogin">&times;</span>
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="email" placeholder="Email" required>
+            <div class="password-wrapper">
+                <input type="password" placeholder="Password" required>
+                <span class="toggle-password">👁️</span>
+            </div>
+            <button type="submit">Login</button>
+            <p>Or login with:</p>
+            <div class="social-login">
+                <button class="google">Google</button>
+                <button class="facebook">Facebook</button>
+            </div>
+            <p>Don't have an account? <a href="#" id="switchToSignup">Sign Up</a></p>
+        </form>
+    </div>
+</div>
+
+<!-- Signup Modal -->
+<div id="signupModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeSignup">&times;</span>
+        <h2>Sign Up</h2>
+        <form id="signupForm">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email" required>
+            <div class="password-wrapper">
+                <input type="password" placeholder="Password" required>
+                <span class="toggle-password">👁️</span>
+            </div>
+            <button type="submit">Sign Up</button>
+            <p>Or sign up with:</p>
+            <div class="social-login">
+                <button class="google">Google</button>
+                <button class="facebook">Facebook</button>
+            </div>
+            <p>Already have an account? <a href="#" id="switchToLogin">Login</a></p>
+        </form>
+    </div>
+</div>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h2>Contact Us</h2>
+                    <p>Email: support@jobhunter.com</p>
+                    <p>Phone: +123 456 7890</p>
+                    <p>Address: 123 Job Hunter Lane, Career City, 45678</p>
+                </div>
+                <div class="footer-section social">
+                    <h2>Follow Us</h2>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section links">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="#">Job Section</a></li>
+                        <li><a href="#">Roadmap Section</a></li>
+                        <li><a href="#">Job Search Section</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p>&copy; 2024 Job Hunter. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
