@@ -1,0 +1,97 @@
+<!-- jobsearch.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Hunter - Job Search</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="navbar.js" defer></script>
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <section>
+        <h2>Job Search Section</h2>
+        <p>Search for jobs that match your skills and interests.</p>
+    </section>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Search - Job Hunter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="navbar.js" defer></script>
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <div id="navbar"></div>
+
+    <!-- Job Search Section -->
+    <section class="job-search">
+        <div class="container">
+            <h2>Search for Your Dream Job</h2>
+            <p>Use our advanced search engine to find the best job opportunities tailored to your skills and location.</p>
+
+            <!-- Search Form -->
+            <form class="search-form">
+                <div class="form-group">
+                    <label for="job-title">Job Title:</label>
+                    <input type="text" id="job-title" name="job-title" placeholder="e.g. Software Developer">
+                </div>
+                <div class="form-group">
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" name="location" placeholder="e.g. New York">
+                </div>
+                <div class="form-group">
+                    <label for="job-type">Job Type:</label>
+                    <select id="job-type" name="job-type">
+                        <option value="full-time">Full-Time</option>
+                        <option value="part-time">Part-Time</option>
+                        <option value="freelance">Freelance</option>
+                        <option value="internship">Internship</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn-primary">Search Jobs</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Featured Search Results Section -->
+    <section class="search-results">
+        <div class="container">
+            <h2>Featured Job Listings</h2>
+            <div class="job-listing">
+                <div class="job">
+                    <h3>Software Engineer</h3>
+                    <p>Location: San Francisco, CA</p>
+                    <p>Type: Full-Time</p>
+                    <a href="#" class="btn">View Details</a>
+                </div>
+                <div class="job">
+                    <h3>Web Developer</h3>
+                    <p>Location: New York, NY</p>
+                    <p>Type: Freelance</p>
+                    <a href="#" class="btn">View Details</a>
+                </div>
+                <div class="job">
+                    <h3>Data Analyst</h3>
+                    <p>Location: Remote</p>
+                    <p>Type: Part-Time</p>
+                    <a href="#" class="btn">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Job Hunter. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
