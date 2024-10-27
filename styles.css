@@ -403,3 +403,490 @@ footer p {
     color: white;
 }
 
+
+/* Job Categories Section */
+.job-overview {
+    padding: 50px 20px;
+    background-color: white;
+}
+
+.job-overview h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.job-categories {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.category {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    max-width: 300px;
+}
+
+.category h3 {
+    font-size: 24px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.category p {
+    font-size: 16px;
+}
+
+.category a {
+    margin-top: 15px;
+}
+
+/* Featured Jobs Section */
+.featured-jobs {
+    background-color: #f8f9fa;
+    padding: 50px 20px;
+}
+
+.featured-jobs h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.job-listing {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.job {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    flex: 1;
+}
+
+.job h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.job p {
+    font-size: 14px;
+    color: #666;
+}
+
+.job a {
+    margin-top: 10px;
+}
+
+/* Call to Action Section */
+.call-to-action {
+    background-color: #007bff;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.call-to-action h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.call-to-action p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.call-to-action .btn-primary {
+    padding: 15px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+/* Job Search Section */
+.job-search {
+    background-color: white;
+    padding: 40px 20px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.job-search h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.job-search p {
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.search-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form-group {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Search Results Section */
+.search-results {
+    margin-top: 40px;
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+}
+
+.search-results h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.job-listing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.job {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    flex: 1;
+}
+
+.job h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.job p {
+    font-size: 14px;
+    color: #666;
+}
+
+.btn {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #218838;
+}
+
+/* Login Section */
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+}
+
+.login-container {
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-container h2 {
+    margin-bottom: 15px;
+    font-size: 28px;
+    color: #333;
+}
+
+.login-container p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.login-form .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.login-form label {
+    font-size: 14px;
+    color: #666;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.login-form input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.btn-primary {
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Signup Link */
+.signup-link {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.signup-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Signup Section */
+.signup-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+}
+
+.signup-container {
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
+}
+
+.signup-container h2 {
+    margin-bottom: 15px;
+    font-size: 28px;
+    color: #333;
+}
+
+.signup-container p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.signup-form .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.signup-form label {
+    font-size: 14px;
+    color: #666;
+}
+
+.signup-form input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.signup-form input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.btn-primary {
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Login Link */
+.login-link {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* More Section */
+.more-section {
+    padding: 50px 20px;
+    margin: 30px auto;
+    max-width: 900px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.more-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.more-section h2 {
+    font-size: 36px;
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.more-section h2::after {
+    content: '';
+    width: 80px;
+    height: 3px;
+    background: #ffdf70;
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.more-section p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.more-section h3 {
+    font-size: 28px;
+    color: #333;
+    margin: 30px 0 15px;
+    border-left: 5px solid #007bff;
+    padding-left: 15px;
+}
+
+.more-section ul,
+.more-section ol {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-left: 20px;
+    color: #444;
+}
+
+.more-section ul li,
+.more-section ol li {
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.more-section ul li::before {
+    content: '•';
+    color: #007bff;
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.more-section ol li {
+    font-weight: 600;
+    color: #007bff;
+}
+
+.more-section a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.more-section a:hover {
+    color: #ffdf70;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
